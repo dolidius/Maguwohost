@@ -1,0 +1,81 @@
+.clients{
+    padding: 12rem 0;
+    font-family: 'Roboto', sans-serif;
+    
+    &__header{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info{
+        width: 40rem;
+    }
+
+    &__title{
+        font-weight: bold;
+        font-size: 3.8rem;
+        color: $color-primary-darkblue;
+        letter-spacing: 2px;
+    }
+
+    &__description{
+        margin-top: 1rem;
+        color: #adadad;
+        font-size: 1.45rem;
+        letter-spacing: 1px;
+        line-height: 1.7;
+        font-weight: 100;
+    }
+
+    &__company{
+        margin-left: 4rem;
+        width: 20rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+.opinion{
+    background: $color-gray-light;
+    width: 38rem;
+    height: 14rem;
+    padding: 3rem;
+    position: relative;
+
+    &:not(:first-child){
+        margin-left: 5rem;
+    }
+
+    &__container{
+        margin-top: 11rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text{
+        font-size: 1.6rem;
+        color: #a4a4a4;
+        font-style: italic;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.8;
+    }
+
+    &__author{
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        color: $color-gray-dark;
+    }
+
+    &__image{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 80%;
+        top: 94%;
+    }
+
+}

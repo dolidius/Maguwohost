@@ -1,0 +1,102 @@
+.main{
+    height: 86.5vh;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../static/header-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+    &__header{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        color: $color-white;
+    }
+
+    &__title{
+        &--primary{
+            font-weight: 500;
+            font-size: 5rem;
+            font-family: 'Slabo 27px', serif;
+            letter-spacing: 1px;
+        }
+
+        &--secondary{
+            margin-top: 3rem;
+            font-weight: 100;
+            font-size: 3rem;
+
+            strong{
+                font-weight: 100;
+                margin: 0 1rem;
+            }
+
+        }
+
+    }
+
+    &__icon{
+        margin-top: 5rem;
+    }
+
+    &__form{
+        margin-top: 5rem;
+        height: 9rem;
+
+        &-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #dddddd;
+            width: 65rem;
+            height: 100%;
+        }
+
+    }
+
+    &__input{
+        height: 65%;
+        border: none;
+        width: 32rem;
+        padding-left: 1.9rem;
+        outline: none;
+        font-size: 1.9rem;
+        font-family: 'Roboto', sans-serif;
+
+        &::placeholder{
+            color: #353535;
+        }
+    }
+
+    &__button{
+        height: 65%;
+        border: none;
+        background: $color-primary-yellow;
+        padding: 0 2.2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        
+        &-domain{
+            color: $color-black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                margin-left: 1.2rem;
+            }
+        }
+
+        &-check{
+            color: $color-white;
+            border-left: 1px solid $color-white;
+        }
+    }
+    
+}

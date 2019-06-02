@@ -1,0 +1,45 @@
+.banner{
+    padding: 12rem 0;
+    background: $color-primary-darkblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    &__header{
+        margin-right: 12rem;
+    }
+
+    &__title{
+        
+        &--primary{
+            color: $color-white;
+            font-weight: 500;
+            font-size: 4.4rem;
+            letter-spacing: 2px;
+        }
+
+        &--secondary{
+            margin-top: .8rem;
+            color: #67687b;
+            font-weight: 100;
+            font-size: 2rem;
+        }
+
+    }
+
+    &__button{
+        button{
+            color: $color-primary-darkblue;
+            background: $color-primary-yellow;
+            font-family: inherit;
+            padding: 2.2rem 4.8rem;
+            font-weight: bold;
+            border: 4px solid $color-white;
+            outline: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+}

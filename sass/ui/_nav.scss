@@ -1,10 +1,12 @@
 .nav{
     width: 100%;
-    height: 12rem;
+    height: 13.5vh;
     background: $color-white;
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
 
     &__logo{
         margin-left: $default-margin;
@@ -14,24 +16,57 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        margin-left: $default-margin;
-        font-family: 'Roboto', sans-serif;
+        // margin-left: $default-margin;
     }
 
     &__link{
-        margin-left: 10rem;
         text-transform: uppercase;
-        font-size: 1.7rem;
-        font-weight: 300;
+        font-size: 1.75rem;
+        font-weight: 500;
+
+        &:not(:first-child){
+            margin-left: 11rem;
+        }
+
+        &-active{
+            color: $color-primary-yellow;
+        }
+
     }
 
     &__info{
-        margin-left: $default-margin;
+        margin-right: $default-margin;
+
+        &-text{
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        &-button{
+            border: none;
+            background: $color-primary-yellow;
+            color: $color-black;
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        &-number{
+            font-style: normal;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
     }
 
     &__address{
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        height: 3rem;
     }
 }

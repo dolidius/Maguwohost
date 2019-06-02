@@ -1,0 +1,67 @@
+.features{
+    width: 100%;
+    background: url('../static/features-bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 12rem 0;
+
+    &__header{
+        text-align: center;
+        color: $color-primary-darkblue;
+        margin-bottom: 12rem;
+    }
+
+    &__title{
+        &--primary{
+            font-weight: bold;
+            font-size: 5rem;
+        }
+
+        &--secondary{
+            margin-top: 1rem;
+            font-weight: 100;
+            font-size: 2.2rem;
+        }
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+.feature{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child){
+        margin-right: 5rem;
+    }
+
+    &__horizontal{
+        height: 3px;
+        width: 7rem;
+        background: $color-gray-dark;
+        margin: 2rem 0;
+    }
+
+    &__title{
+        font-size: 2.9rem;
+        font-family: 'Slabo 27px', serif;
+        color: $color-primary-yellow;
+        letter-spacing: 1px;
+    }
+
+    &__description{
+        margin-top: 2rem;
+        font-size: 1.35rem;
+        line-height: 1.8;
+        width: 31rem;
+    }
+
+}
