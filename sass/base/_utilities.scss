@@ -4,4 +4,25 @@
 
 .mg-hz-md{
     margin: 0 10rem;
+
+    @media(max-width: 1750px){
+        margin: 0 7rem;
+    }
+
+    @media(max-width: 1200px){
+        margin: 0 4rem;
+    }
+
+    @media(max-width: 375px){
+        margin: 0 2rem;
+    }
+
+}
+
+.visible-mb{
+    display: none;
+
+    @media (max-width: 500px) {
+        display: block;
+    }
 }

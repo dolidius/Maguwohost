@@ -7,17 +7,52 @@
     align-items: center;
     font-family: 'Roboto', sans-serif;
 
+    @media(max-width: 540px){
+        flex-direction: column;
+    }
+
     &__header{
         margin-right: 12rem;
+
+        @media(max-width: 800px){
+            margin-right: 7rem;
+        }
+
+        @media(max-width: 540px){
+            margin-right: 0;
+        }
+
     }
 
     &__title{
+
+        @media(max-width: 540px){
+            text-align: center;
+        }
         
         &--primary{
             color: $color-white;
             font-weight: 500;
             font-size: 4.4rem;
             letter-spacing: 2px;
+
+            @media(max-width: 1000px){
+                font-size: 3.8rem;
+                letter-spacing: normal;
+            }
+
+            @media(max-width: 800px){
+                font-size: 3.4rem;
+            }
+
+            @media(max-width: 380px){
+                font-size: 3rem;
+            }
+
+            @media(max-width: 380px){
+                font-size: 2.5rem;
+            }
+            
         }
 
         &--secondary{
@@ -25,6 +60,29 @@
             color: #67687b;
             font-weight: 100;
             font-size: 2rem;
+
+            @media(max-width: 1000px){
+                font-size: 1.7rem;
+            }
+
+            @media(max-width: 800px){
+                font-size: 1.5rem;
+            }
+
+            @media(max-width: 540px){
+                margin-bottom: 2.5rem;
+                font-size: 1.8rem;
+            }
+
+            &::after{
+                content: "Follow the button in the right section";
+
+                @media(max-width: 540px){
+                    content: "Follow the below button"
+                }
+            }
+
+
         }
 
     }
@@ -40,6 +98,18 @@
             outline: none;
             cursor: pointer;
             font-size: 1.5rem;
+
+            @media(max-width: 1000px){
+                font-size: 1.35rem;
+                padding: 2rem 4.4rem;
+            }
+
+            @media(max-width: 800px){
+                font-size: 1.3rem;
+                padding: 1.9rem 3.8rem;
+                border-width: 3px;
+            }
+
         }
     }
 }

@@ -7,7 +7,7 @@
     position: relative;
 
     &__header{
-        position: absolute;
+        position: relative;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
@@ -19,11 +19,17 @@
     }
 
     &__title{
+        text-align: center;
+
         &--primary{
             font-weight: 500;
             font-size: 5rem;
             font-family: 'Slabo 27px', serif;
             letter-spacing: 1px;
+
+            @media(max-width: 680px){
+                font-size: 4.3rem;
+            }
         }
 
         &--secondary{
@@ -42,19 +48,37 @@
 
     &__icon{
         margin-top: 5rem;
+
+        img{
+            @media(max-width: 680px){
+                width: 10rem;
+            }
+        }
+        
     }
 
     &__form{
         margin-top: 5rem;
         height: 9rem;
 
+        @media(max-width: 680px){
+            height: 8rem;
+        }
+
         &-container{
             display: flex;
             justify-content: center;
             align-items: center;
             background: #dddddd;
-            width: 65rem;
+            width: 100%;
             height: 100%;
+            padding: 0 1rem;
+
+            @media(max-width: 500px){
+                padding: 0 .7rem;
+            }
+
+            
         }
 
     }
@@ -67,6 +91,20 @@
         outline: none;
         font-size: 1.9rem;
         font-family: 'Roboto', sans-serif;
+
+        @media(max-width: 680px){
+            width: 30rem;
+            height: 60%;
+            font-size: 1.6rem;
+        }
+
+        @media(max-width: 500px){
+            width: 25rem;
+        }
+
+        @media(max-width: 360px){
+            width: 20rem;
+        }
 
         &::placeholder{
             color: #353535;
@@ -81,6 +119,20 @@
         font-size: 1.5rem;
         font-weight: bold;
         cursor: pointer;
+
+        @media(max-width: 680px){
+            height: 60%;
+            font-size: 1.4rem;
+            padding: 0 1.8rem;
+        }
+
+        @media(max-width: 360px){
+            padding: 0 1.2rem;
+        }
+
+        @media(max-width: 320px){
+            padding: 0 .9rem;
+        }
         
         &-domain{
             color: $color-black;

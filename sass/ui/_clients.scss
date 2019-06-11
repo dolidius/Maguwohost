@@ -5,6 +5,12 @@
     &__header{
         display: flex;
         justify-content: center;
+
+        @media(max-width: 1150px){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__info{
@@ -16,6 +22,10 @@
         font-size: 3.8rem;
         color: $color-primary-darkblue;
         letter-spacing: 2px;
+
+        @media(max-width: 1150px){
+            font-size: 5rem;
+        }
     }
 
     &__description{
@@ -25,11 +35,37 @@
         letter-spacing: 1px;
         line-height: 1.7;
         font-weight: 100;
+
+        @media(max-width: 1150px){
+            font-size: 1.6rem;
+        }
+    }
+
+    &__companies{
+        display: flex;
+        flex-direction: row;
+
+        @media(max-width: 1150px){
+            margin-top: 6rem;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 4rem;
+        }
     }
 
     &__company{
         margin-left: 4rem;
         width: 20rem;
+
+        @media(max-width: 1150px){
+            margin-left: 0;
+            width: 22rem;
+        }
+
+        @media(max-width: 330px){
+            width: 18rem;
+        }
 
         img{
             width: 100%;
@@ -45,14 +81,35 @@
     padding: 3rem;
     position: relative;
 
+    @media(max-width: 1150px){
+        &:not(:first-child){
+            margin-top: 6rem;
+        }
+    }
+
+    @media(max-width: 330px){
+        width: 34rem;
+    }
+
     &:not(:first-child){
         margin-left: 5rem;
+
+        @media(max-width: 1150px){
+            margin-left: 0;
+        }
+
     }
 
     &__container{
+        width: 100%;
         margin-top: 11rem;
         display: flex;
         justify-content: center;
+
+        @media(max-width: 1150px){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__text{
@@ -61,6 +118,11 @@
         font-style: italic;
         font-family: 'Roboto', sans-serif;
         line-height: 1.8;
+
+        @media(max-width: 330px){
+            font-size: 1.4rem;
+        }
+
     }
 
     &__author{
@@ -76,6 +138,11 @@
         transform: translate(-50%, -50%);
         left: 80%;
         top: 94%;
+        width: 11rem;
+
+        img{
+            width: 100%;
+        }
     }
 
 }

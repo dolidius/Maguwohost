@@ -9,14 +9,54 @@
     box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
 
     &__logo{
-        margin-left: $default-margin;
+        margin-left: 15rem;
+
+        @media(max-width: 1600px){
+            margin-left: 11.5rem;
+        }
+
+        @media(max-width: 1200px){
+            margin-left: 9rem;
+        }
+
+        @media(max-width: 1100px){
+            margin-left: 5rem;
+        }
+
+        @media(max-width: 400px){
+            margin-left: 3.5rem;
+        }
+
+        @media(max-width: 375px){
+            margin-left: 2.5rem;
+        }
+
+        img{
+            @media(max-width: 800px){
+                width: 30rem;
+            }
+
+            @media(max-width: 600px){
+                width: 25rem;
+            }
+
+            @media(max-width: 460px){
+                width: 20rem;
+            }
+
+        }
+
     }
 
     &__links{
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        // margin-left: $default-margin;
+
+        @media(max-width: 1050px){
+            display: none;
+        }
+
     }
 
     &__link{
@@ -26,6 +66,19 @@
 
         &:not(:first-child){
             margin-left: 11rem;
+
+            @media(max-width: 1850px){
+                margin-left: 8rem;
+            }
+
+            @media(max-width: 1700px){
+                margin-left: 6rem;
+            }
+
+            @media(max-width: 1400px){
+                margin-left: 5rem;
+                font-size: 1.65rem;
+            }
         }
 
         &-active{
@@ -35,12 +88,36 @@
     }
 
     &__info{
-        margin-right: $default-margin;
+        margin-right: 15rem;
+
+        @media(max-width: 1600px){
+            margin-right: 11.5rem;
+        }
+
+        @media(max-width: 1200px){
+            margin-right: 9rem;
+        }
+
+        @media(max-width: 1100px){
+            margin-right: 5rem;
+        }
+
+        @media(max-width: 400px){
+            margin-right: 3.5rem;
+        }
+
+        @media(max-width: 375px){
+            margin-left: 2.5rem;
+        }
 
         &-text{
             margin-bottom: 1.5rem;
             font-size: 1.3rem;
             font-weight: 500;
+
+            @media(max-width: 400px){
+                font-size: 1.2rem;
+            }
         }
 
         &-button{
